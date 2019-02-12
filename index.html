@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Parking Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/reset.css"/>
+	<link rel="stylesheet" href="./css/fonts.css"/>	
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="./libs/slick-slider/slick.css">
+	<link rel="stylesheet" href="./css/style.css"/>
+	<link rel="stylesheet" href="./css/media.css"/>
+</head>
+<body>
+	<header class="header_top menu">		
+		<div class="logo">
+			<a href="#"><img src="img/logo.png" alt="alt"></a>
+		</div>	
+		<div class="menu__icon">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>  
+		<div class="menu__links">
+			<a class="menu__links-item" href="#">Главная</a>
+			<a class="menu__links-item" href="#">История</a>
+			<a class="menu__links-item" href="#">Штрафы</a>
+			<a class="menu__links-item" href="#">Абонементы</a>
+		</div>
+	</header>
+	<section class="map_form">
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2417616170173!2d36.2347555157154!3d50.006823679416705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0de5f485ed7%3A0xc1fc5eaa145b7fb8!2sWeb+Promo!5e0!3m2!1sru!2sua!4v1549445090718" allowfullscreen></iframe>
+			<div class="zones">				
+				<div class="zona"><a href="#"><span>- Красная зона - тариф</span>10 грн/час</a></div>
+				<div class="zona"><a href="#"><span>- Синяя зона - тариф</span>5 грн/час</a></div>
+				<div class="zona"><a href="#"><span>- Зеленая зона - тариф</span>1 грн/час</a></div>
+			</div>
+		</div>		
+		<div class="form-group">
+			<form class="form">
+				<div class="input_form">						
+					<p class="title">Вход</p>		
+					<input type="text" placeholder="Логин">
+					<input type="text" placeholder="Пароль">
+					<div class="button_imputs">
+						<a href="#" class="button">Войти</a>
+					</div>
+				</div>
+			</form>
+			<form class="form">
+				<div class="input_form">						
+					<p class="title">Штраф</p>		
+					<input type="text" placeholder="номер">
+					<input type="text" placeholder="номер">
+					<div class="button_imputs">
+						<a href="#" class="button">Показать</a>
+					</div>
+				</div>
+			</form>
+			<form class="form">
+				<div class="input_form">
+					<p class="title">Абонементы</p>					
+					<div class="button_imputs">
+						<a href="#" class=" button">Заказать абонемент</a>
+					</div>
+				</div>
+			</form>			
+		</div>		
+	</section>
+	<section class="history">		
+		<div class="container_history">		
+			<div class="history_title">
+				<p>История нарушений и платежей</p>
+			</div>	
+			<div class="history_info">
+				<img src="./img/apk7sm1.png" alt="alt">
+				<div class="history_item_text">
+					<p>Ваше транспортное средство оштрафовано</p>
+					<p class="line_history"><span>дата, время, доп информация</span></p>
+				</div>
+			</div>
+			<div class="history_info">
+				<img src="./img/apk7sm2.png" alt="alt">
+				<div class="history_item_text">
+					<p>Ваше транспортное средство эвакуировано</p>
+					<p class="line_history"><span>дата, время, доп информация</span></p>
+				</div>
+			</div>
+			<div class="history_info">
+				<img src="./img/apk7sm3.png" alt="alt">
+				<div class="history_item_text">
+					<p>Произведена оплата парковки</p>
+					<p class="line_history"><span>дата, время, доп информация</span></p>
+				</div>
+			</div>
+			<div class="history_info">
+				<img src="./img/apk7sm1.png" alt="alt">
+				<div class="history_item_text">
+					<p>Ваше транспортное средство оштрафовано</p>
+					<p class="line_history"><span>дата, время, доп информация</span></p>
+				</div>
+			</div>
+			<div class="history_info">
+				<img src="./img/apk7sm2.png" alt="alt">
+				<div class="history_item_text">
+					<p>Ваше транспортное средство эвакуировано</p>
+					<p class="line_history"><span>дата, время, доп информация</span></p>
+				</div>
+			</div>
+			<div class="history_info">
+				<img src="./img/apk7sm3.png" alt="alt">
+				<div class="history_item_text">
+					<p>Произведена оплата парковки</p>
+					<p class="line_history"><span>дата, время, доп информация</span></p>
+				</div>
+			</div>						
+		</div>
+	</section>
+	<section class="about_violation">
+		<div class="title_about">
+			<h2>О нарушении</h2>
+		</div>
+		<div class="sub_text">
+			<p>Причина</p>					
+		</div>
+		<div class="sub_text_min">			
+			<p>Нарушение правил парковки</p>			
+		</div>
+		<div class="container_slider">
+			<div class="document">
+				<img src="./img/doc.jpg" alt="alt">
+			</div>			
+			<div class="slider_holder">
+				<div class="slider">								
+					<img src="img/slider.png" alt="">
+					<img src="img/slider.png" alt="">
+					<img src="img/slider.png" alt="">
+					<img src="img/slider.png" alt="">
+					<img src="img/slider.png" alt="">							
+				</div>
+			</div>
+		</div>
+		<div class="sub_text">
+			<p>Рекомендации к действию</p>
+		</div>
+	</section>			
+	<section class="money_zones">
+		<div class="title_money">
+			<h2>Выберите абонемент</h2>
+		</div>
+		<div class="red box_zone">
+			<div class="title_zone">
+				<h2>Красная зона</h2>
+			</div>
+			<div class="container_zone">
+				<div class="item_zone">
+					<div class="zone"><p>Красная зона</p></div>
+					<div class="money_zone"><p>10 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">24 часа</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+				<div class="item_zone">
+					<div class="zone"><p>Красная зона</p></div>
+					<div class="money_zone"><p>50 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">7 дней</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+				<div class="item_zone">
+					<div class="zone"><p>Красная зона</p></div>
+					<div class="money_zone"><p>100 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">30 дней</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+			</div>
+		</div>
+		<div class="green box_zone">
+			<div class="title_zone">
+				<h2>Зеленая зона</h2>
+			</div>
+			<div class="container_zone">
+				<div class="item_zone">
+					<div class="zone"><p>Зеленая зона</p></div>
+					<div class="money_zone"><p>10 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">24 часа</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+				<div class="item_zone">
+					<div class="zone"><p>Зеленая зона</p></div>
+					<div class="money_zone"><p>50 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">7 дней</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+				<div class="item_zone">
+					<div class="zone"><p>Зеленая зона</p></div>
+					<div class="money_zone"><p>100 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">30 дней</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+			</div>
+		</div>
+		<div class="blue box_zone">
+			<div class="title_zone">
+				<h2>Синяя зона</h2>
+			</div>
+			<div class="container_zone">
+				<div class="item_zone">
+					<div class="zone"><p>Синяя зона</p></div>
+					<div class="money_zone"><p>10 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">24 часа</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+				<div class="item_zone">
+					<div class="zone"><p>Синяя зона</p></div>
+					<div class="money_zone"><p>50 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">7 дней</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+				<div class="item_zone">
+					<div class="zone"><p>Синяя зона</p></div>
+					<div class="money_zone"><p>100 ₴</p></div>
+					<div class="text_zone"><p>Доступ ко всем платным стоянкам г. Харькова в пределах тарифной зоны</p></div>
+					<div class="hours_zone">30 дней</div>
+					<a href="#" class="button_zone">Оплатить</a>
+				</div>
+			</div>
+		</div>
+
+	</section>	
+	<footer class="footer">
+		<div class="info">
+			<div class="input_form_tel">
+				<p>Служба поддержки (круглосуточно)</p>
+				<a href="tel:+3806669112358"><span>+3806669112358</span></a>
+			</div>
+			<div class="store_play">
+				<a href="#"><img src="./img/app_store.png" alt="alt"></a>
+				<a href="#"><img src="./img/google_play.png" alt="alt"></a>
+			</div>
+		</div>		
+	</footer>
+	<script src="./js/jquery-3.0.0.min.js"></script>
+	<script src="./libs/slick-slider/slick.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
+
+

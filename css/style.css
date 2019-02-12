@@ -1,0 +1,556 @@
+
+section {
+  padding: 0 100px;
+}
+
+header {  
+  max-height: 90px; 
+}
+
+/*-------------------start header---------------------------------------*/
+
+
+.header_top {
+  position: fixed;
+  background-color: #1d377d;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;    
+  border-bottom: 13px solid #a1b6cc;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+ }
+
+.logo {  
+  margin: 0;
+  text-align: left;
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  padding-top: 10px;
+  width: 80%;
+}
+.menu {
+  text-align: right;
+
+}
+
+.menu__icon {
+ display: none;
+ width: 45px;
+ height: 35px;
+ position: relative;
+ cursor: pointer;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+}
+
+
+.menu__links-item {
+  display: flex;
+  list-style: none;
+  padding: 30px 25px;
+}
+
+  .menu__links-item:hover {
+    text-decoration: underline;
+}
+
+  .menu.menu_state_open .menu__icon span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .menu.menu_state_open .menu__icon span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+
+  .menu.menu_state_open  .menu__icon span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .menu.menu_state_open  .menu__icon span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+  }
+
+  .menu.menu_state_open .menu__links {
+    display: block;  
+  }
+  .menu__links {
+   display: flex;
+ }
+ .menu__links a {	
+   color: #fff;
+   font-family: 'Arial', sans-serif; 
+   font-size: 15px;
+ }
+
+
+ .menu__links a:hover {
+   color:#6da7e4;
+ }
+ /*--------------------end header-------------------------------*/
+
+ /*--------------------------------start section map-------------------------------------*/
+ .map_form {  
+  display: flex;    
+  padding-top: 120px; 
+}
+
+.map {
+  position: relative;
+  width: 100%;
+  
+}
+
+.map iframe {
+  display: flex;
+  min-height: 550px;
+  width: 90%;
+}
+
+.form-group {
+  position: relative;
+  width: 60%;
+
+}
+
+.input_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;    
+  padding: 25px 0;
+  margin-bottom: 6px;
+}
+
+.input_form input {
+  margin-top: 15px;
+  border: 3px solid #336699;
+  width: 60%;
+  min-width: 340px;    
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+
+.input_form input[type="text"] {
+  font-family: 'Arial', sans-serif;   
+  font-size: 15px;
+  color: #336699;
+  font-style: oblique;  
+}
+
+.button_inputs {
+	font-family: 'ArialRegular';   	
+  bottom: 32px;
+  width: 100%;
+}
+
+.button {
+  color: #fff;
+  line-height: 40px;
+  display: inline-block;  
+  width: 270px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+  background-color: #336699;
+  border: 3px solid #fff;
+}
+
+.title {
+  font-family: 'ArialRegular';   
+  font-size: 20px;
+  color: #336699;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+
+.zones {
+  font-family: 'ArialRegular'; 
+  font-size: 15px;
+  color: #336699;
+  border: 8px solid #ebebeb ;
+  width: 40%;
+  padding: 12px 0;
+  line-height: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+
+
+}
+
+.zones span {  
+  color:#999999;
+}
+
+
+/*--------------------------------start section map-------------------------------------*/
+
+/*--------------------------------start section history-------------------------------------*/
+.history {
+    position: relative;
+    display: flex;
+    justify-content: center;      
+    font-family: 'Arial', sans-serif;   
+    color: #336699;   
+    z-index: -1;    
+    margin: 40px 0;
+}
+.container_history {
+  position: relative;
+  width: 600px;
+}
+
+.history_title p {  
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: #0d0767; 
+  border-bottom: 3px solid #336699;
+  font-size: 30px;
+}
+
+.history_info {
+  overflow: hidden;
+  display: flex;
+  padding: 10px 0 0 0;
+}
+
+.history_info img {
+  height: 10%;
+  width: 10%;
+  margin-right: 15px;
+  margin-bottom: 25px;
+}
+
+
+
+.history_item_text {
+  padding-bottom: 8px;
+  
+}
+
+.history p {
+  font-size: 20px;
+  padding-bottom: 3px;
+  color: #3347b9;
+}
+
+
+.history span {
+  position: relative;
+  font-size: 12px;
+  font-style: oblique;
+  color: #999999;
+  padding-bottom: 20px;
+}
+
+.line_history span:before {
+  content: "";
+  width: 510px;
+  height: 1px;
+  background-color: #336699;
+  position: absolute;
+  top: 110%;
+  left: 20px;
+  transform: translateY(-50%);
+  
+}
+
+.line_history span:after {
+  content: "";
+  width: 12%;
+  height: 1px;
+  background-color: #336699;
+  position: absolute;
+  top: 110%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+
+
+/*--------------------------------end section history-------------------------------------*/
+
+
+/*-------------------------start about violation------------------------------------*/
+.about_violation {
+  
+  padding: 0 100px;
+}
+.title_about {
+  color: #336699;
+  font-size: 30px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.sub_text p{
+  color: #336699;
+  font-size: 22px;
+  border-bottom: 1px solid #336699;
+  font-style: italic;
+  
+}
+.sub_text_min {
+  color: #999;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.container_slider {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.slider {
+  display: flex;
+  padding-left: 40px;
+ 
+}  
+
+.slider img { 
+  padding-left: 10px;
+  width: 60%;
+ 
+}
+.slider_holder {
+    flex-shrink: 1;
+    width: 50%;
+}
+
+
+.slick-dotted.slick-slider{
+    
+}
+.slick-dots{
+    
+}
+.slick-dots li {
+   
+}
+
+
+
+
+
+
+
+
+/*-------------------------end about violation------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*-------------------start money_zones---------------------------------*/
+
+.title_money {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "ArialRegular";
+  color: #336699;
+  text-align: center;
+  margin: 40px 0 0 20px;
+}
+
+.box_zone {
+  margin: 0 100px; 
+}
+
+.container_zone {  
+  display: flex;
+  justify-content:space-around;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  border-width: 0 1px 1px;
+  border-style: solid;
+}
+
+.red .container_zone {
+  border-color: #ff2b5c;
+}
+
+.green .container_zone{
+  border-color:  #13c45a;  
+}
+
+.blue .container_zone{
+  border-color: #336699;
+  
+}
+
+.title_zone {
+  font-size: 30px;
+  font-family: "ArialRegular"; 
+  border-width: 0 0 6px 0;
+  border-style: solid;
+  padding: 25px 0;
+  text-align: center;
+   margin-left: -10px;
+   margin-right: -10px;
+}
+.red .title_zone   {
+  background-color: #ffc6d0;
+  color: #ff2b5c;
+  border-bottom-color: #ff2b5c;
+}
+.green .title_zone {
+  background-color: #c1f9d2;
+  color: #13c45a;
+  border-bottom-color: #13c45a;
+}
+
+.blue .title_zone  {
+  background-color: #c6cbef;
+  color: #336699;
+  border-bottom-color:: #336699;
+  
+}
+
+.zone{
+    padding-top: 5px;
+}
+
+.red .zone   {color: #ff2b5c;}
+.green .zone {color: #13c45a;}
+.blue .zone  {color: #336699;}
+
+.item_zone {
+  border: 9px solid #ebebeb;
+  text-align: center;
+  width: 340px;
+}
+
+.money_zone {
+  font-weight: bold;
+  font-size: 60px;
+  color: #000;
+}
+
+.hours_zone {
+  color: #336699;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button_zone {
+  color: #fff;
+  line-height: 40px;
+  display: inline-block;  
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-top: 22px;
+  margin-bottom: 15px;
+  background-color: #336699;  
+}
+
+.text_zone {
+  font-size: 14px;
+  color: #999999;
+}
+ .item_zone {
+  width: 30%;
+ }
+
+
+
+
+/*-------------------end money_zones---------------------------------*/
+
+/*--------------------------start footer --------------------------------------------------*/
+
+.footer {
+  display: flex;  
+
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  font-family: "ArialItalic";  
+  font-size: 20px;
+  font-weight: 600; 
+  padding: 20px;
+  border-top: 3px solid #336699;
+  padding: 20px 100px;
+}
+
+.info span {
+  color: #336699;
+  margin-top: 10px;
+}
+
+.info p {
+  margin-bottom: 10px;
+}
+
+.store_play {
+    text-align: right;    
+    display: flex;
+
+}
+
+
+.store_play a {
+    margin: 0 5px;
+}
+
+.store_play a img {
+   height: auto;
+   width: 80%;
+}
+
+
+
+/*--------------------------end footer --------------------------------------------------*/
