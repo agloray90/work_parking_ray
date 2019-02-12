@@ -9,6 +9,12 @@
 	.zones {
 		width: 90%;
 	}
+	.popup_zones {
+		left: 21%;
+	}
+	.error_popup {
+		left: 15%;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -124,6 +130,13 @@
 	.item_zone {
 		width: 100%;
 	}
+	.popup_zones {
+		width: 70%;
+		left: 15%;
+	}
+	.error_popup {
+		left: 2%;
+	}
 
 }
 
@@ -170,6 +183,34 @@
 	.store_play img {   		
   		width: 100%;
 	}
+	.popup_zones{
+		width: 90%;
+		left: 5%;
+	}
+	.error_popup {
+		margin: 35px;
+    	width: 80%;
+	}
+	.error_text img {
+		width: 60%;
+	}
+	.row {
+		margin-bottom: 30px;
+		text-align: center;
+		display: block;
+	}
+	label {
+		padding: 0;
+		text-align: center;
+
+	}
+	.row .input-holder {
+		display: block;
+	}
+	.button_form_popup {
+		text-align: center;
+	}
+
 }
 
 /* Custom, iPhone Retina */
