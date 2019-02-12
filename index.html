@@ -32,10 +32,13 @@
 	<section class="map_form">
 		<div class="map">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2417616170173!2d36.2347555157154!3d50.006823679416705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0de5f485ed7%3A0xc1fc5eaa145b7fb8!2sWeb+Promo!5e0!3m2!1sru!2sua!4v1549445090718" allowfullscreen></iframe>
-			<div class="zones">				
-				<div class="zona"><a href="#"><span>- Красная зона - тариф</span>10 грн/час</a></div>
-				<div class="zona"><a href="#"><span>- Синяя зона - тариф</span>5 грн/час</a></div>
-				<div class="zona"><a href="#"><span>- Зеленая зона - тариф</span>1 грн/час</a></div>
+			<div class="zones">
+				<img src="./img/img_foto.png" alt="alt">				
+				<div class="zones_item">
+					<div class="zona"><a hчасref="#"><span>- Красная зона - тариф </span>10 грн/час</a></div>
+					<div class="zona"><a href="#"><span>- Синяя зона - тариф </span>5 грн/час</a></div>
+					<div class="zona"><a href="#"><span>- Зеленая зона - тариф </span>1 грн/час</a></div>
+				</div>
 			</div>
 		</div>		
 		<div class="form-group">
@@ -142,7 +145,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="sub_text">
+		<div class="sub_back">
 			<p>Рекомендации к действию</p>
 		</div>
 	</section>			
@@ -234,23 +237,93 @@
 				</div>
 			</div>
 		</div>
-
-	</section>	
-	<footer class="footer">
-		<div class="info">
-			<div class="input_form_tel">
-				<p>Служба поддержки (круглосуточно)</p>
-				<a href="tel:+3806669112358"><span>+3806669112358</span></a>
+	</section>
+	<section class="popup_zones">
+		<div class="popup_money">
+			<div class="caption_title popup_zone">
+				<div class="caption"><p>Зеленая зона</p></div>
+				<div class="caption_money_zone"><p>10 ₴</p></div>
+				<div class="caption_hours_zone">24 часа</div>
 			</div>
-			<div class="store_play">
-				<a href="#"><img src="./img/app_store.png" alt="alt"></a>
-				<a href="#"><img src="./img/google_play.png" alt="alt"></a>
+		</div>
+		<form action="#">
+			<div class="forms_popup">
+				<div class="title">
+					<p>Оплата</p>
+				</div>			
+					<div class="numb_car">
+						<input type="text" placeholder="Введите номер транспортного средства">
+					</div>
+					<div class="row name_item">
+						
+						<div class="input-holder">
+							<label>Имя владельца карты</label>
+							<input type="text" placeholder="Имя">
+							<input type="text" placeholder="Фамилия">
+						</div>
+					</div>
+					<div class="row numb_item">
+						<label>Номер карты</label>
+						<input type="text" placeholder="Номер карты">
+					</div>
+					<div class="row time_item">
+						<div class="input-holder">
+							<label>Срок действия</label>
+							<input type="text" placeholder="мм">
+							<input type="text" placeholder="гг">
+						</div>
+					</div>
+					<div class="row numb_item">
+						<label>Код CV/CVC</label>
+						<input type="text" placeholder="мм">						
+					</div>				
+					<div class="button_form_popup">
+						<a href="#" class=" button_popup">Оплатить</a>
+					</div>
+				</div>	
+		</form>
+	</section>
+	<section class="attention">
+		<div class="error_popup">						
+			<div class="error_text">
+				<img src="./img/error.png" alt="alt">
+				<p class="error_title">Ошибка транзакции</p>
+				<p class="error_subtext ">Проверьте введенные Вами данные</p>
 			</div>
-		</div>		
-	</footer>
-	<script src="./js/jquery-3.0.0.min.js"></script>
-	<script src="./libs/slick-slider/slick.js"></script>
-	<script src="./js/main.js"></script>
+			<div class="button_imputs">
+				<a href="#" class="button">Назад</a>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="attention">
+	<div class="error_popup">						
+		<div class="error_text">
+			<img src="./img/error.png" alt="alt">
+			<p class="error_title">Пользователя не существует!</p>
+			<p class="error_subtext">Проверьте введенные Вами данные</p>
+		</div>
+		<div class="button_imputs">
+			<a href="#" class="button">Назад</a>
+		</div>
+	</div>
+</div>
+</section>			
+<footer class="footer">
+	<div class="info">
+		<div class="input_form_tel">
+			<p>Служба поддержки (круглосуточно)</p>
+			<a href="tel:+3806669112358"><span>+3806669112358</span></a>
+		</div>
+		<div class="store_play">
+			<a href="#"><img src="./img/app_store.png" alt="alt"></a>
+			<a href="#"><img src="./img/google_play.png" alt="alt"></a>
+		</div>
+	</div>		
+</footer>
+<script src="./js/jquery-3.0.0.min.js"></script>
+<script src="./libs/slick-slider/slick.js"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
 

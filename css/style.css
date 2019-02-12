@@ -170,7 +170,7 @@ header {
 .input_form input[type="text"] {
   font-family: 'Arial', sans-serif;   
   font-size: 15px;
-  color: #336699;
+  color: #000;
   font-style: oblique;  
 }
 
@@ -206,6 +206,8 @@ header {
 
 
 .zones {
+  display: flex;
+  flex-direction: row;  
   font-family: 'ArialRegular'; 
   font-size: 15px;
   color: #336699;
@@ -215,14 +217,23 @@ header {
   line-height: 20px;
   font-weight: 600;
   margin-top: 10px;
+  padding-left: 20px;
+  
+}
 
 
+.zones_item {
+  display: flex;
+  flex-direction: column;
+-
 }
 
 .zones span {  
   color:#999999;
 }
-
+.zona {
+  padding: 10px 0 5px 10px;
+}
 
 /*--------------------------------start section map-------------------------------------*/
 
@@ -312,10 +323,10 @@ header {
 
 
 /*-------------------------start about violation------------------------------------*/
-.about_violation {
-  
+.about_violation {  
   padding: 0 100px;
 }
+
 .title_about {
   color: #336699;
   font-size: 30px;
@@ -337,6 +348,13 @@ header {
   padding-top: 5px;
 }
 
+ .sub_back p {
+  font-style: none;
+  border-bottom: 1px solid #336699;
+  color: #336699;
+  font-size: 22px;
+}
+
 .container_slider {
   padding-top: 20px;
   padding-bottom: 50px;
@@ -354,38 +372,211 @@ header {
   width: 60%;
  
 }
-.slider_holder {
-    flex-shrink: 1;
+.slider_holder {    
     width: 50%;
 }
-
-
-.slick-dotted.slick-slider{
-    
-}
-.slick-dots{
-    
-}
-.slick-dots li {
-   
-}
-
-
-
-
-
 
 
 
 /*-------------------------end about violation------------------------------------*/
 
 
+/*------------------------------------start popup_zones-------------------------------------*/
 
 
+.popup_zones { 
+  max-width: 600px;
+  background-color: #ebecec;
+  border:2px solid #336699;
+  box-shadow: 0 0 0 10px #ebecec, 0 0 0 12px #336699;
+  position: relative;
+  left: 30%;
+  margin-bottom: 100px;
+}
+
+.title {
+  color: #369;
+  font-size: 16px;
+  text-align: center;
+}
 
 
+.caption_title {  
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  
+
+}
+.row{
+  display: flex;
+
+}
+.row label{
+  min-width: 45%;
+  width: 50%;
+}
+
+label {
+  text-align: right;
+  padding: 5px 15px;
+}
+
+.row .input-holder{
+  width: 50%;
+  display: flex;
+  min-width: 100%; 
+}
+
+.input-holder input {
+  margin-left: 5px;
+}
+
+.caption {
+  color: #13c45a;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+.caption_money_zone {
+  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+ 
+}
+
+.caption_hours_zone {
+  color: #369;
+  font-size: 22px;
+  padding-left: 5px;
+}
+
+.numb_car {
+  text-align: center;
+}
+
+.numb_car input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border: 2px solid #336699;
+  width: 80%;
+  min-width: 340px;    
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.numb_car input[type="text"],
+.name_item input[type="text"],
+.numb_item input[type="text"],
+.time_item input[type="text"] {
+  font-family: 'Arial', sans-serif;   
+  font-size: 15px;
+  color: #000;
+  font-style: oblique;  
+}
+
+.name_item {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.name_item p {
+  color: #000;
+  font-size: 16px;
+  padding-right: 10px;
+  padding-top: 3px;
+
+}
+
+.name_item input {
+  width: 27%;
+  border: 2px solid #336699;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 
+.numb_item {
+  display: flex;
+  justify-content: space-between;  
+  margin: 5px 0;
+}
+
+.numb_item input {
+  width: 55%;
+  border-radius: 5px;
+  border: 2px solid #336699;
+  padding: 5px 10px;
+}
+
+
+.time_item {
+  display: flex;
+  justify-content: space-between; 
+
+}
+
+.time_item input {
+  width: 27%;
+  border-radius: 5px;
+  border: 2px solid #336699;
+  padding: 5px 10px;
+}
+.time_input
+.button_form_popup {
+  font-family: 'Arial', sans-serif    
+  bottom: 32px;
+  width: 100%;
+}
+
+.button_form_popup {
+  text-align: right;
+
+}
+
+.button_popup {
+  color: #fff;
+  line-height: 30px;
+  display: inline-block;  
+  width: 50%;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px; 
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #336699;
+}
+
+.error_popup {
+  text-align: center;
+  max-width: 590px;
+  position: relative;
+  background-color: #ebecec;
+  border:2px solid #ff2b5c;
+  box-shadow: 0 0 0 10px #ebecec, 0 0 0 12px #ebecec;
+  border-radius: 2px;
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+
+}
+
+.error_title {
+  padding-top: 40px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.error_subtext {
+  padding-top: 20px;
+  color: #ff2b5c;
+  font-size: 15px;
+}
+
+
+/*------------------------------------end popup_zones-------------------------------------*/
 
 /*-------------------start money_zones---------------------------------*/
 
@@ -500,6 +691,7 @@ header {
  .item_zone {
   width: 30%;
  }
+
 
 
 
